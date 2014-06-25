@@ -27,6 +27,7 @@
 		EA851A74195A9B5700B6EAED /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = EA851A71195A9B5700B6EAED /* background-music-aac.caf */; };
 		EA851A75195A9B5700B6EAED /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = EA851A72195A9B5700B6EAED /* pew-pew-lei.caf */; };
 		EA851A76195A9B5700B6EAED /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = EA851A73195A9B5700B6EAED /* sprites.atlas */; };
+		EA851A7C195A9FDF00B6EAED /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EA851A7B195A9FDF00B6EAED /* GameOverScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		EA851A71195A9B5700B6EAED /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		EA851A72195A9B5700B6EAED /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		EA851A73195A9B5700B6EAED /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		EA851A7A195A9FDF00B6EAED /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		EA851A7B195A9FDF00B6EAED /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 			children = (
 				EA851A70195A9B5700B6EAED /* Sounds */,
 				EA851A73195A9B5700B6EAED /* sprites.atlas */,
+				EA851A7A195A9FDF00B6EAED /* GameOverScene.h */,
+				EA851A7B195A9FDF00B6EAED /* GameOverScene.m */,
 			);
 			path = SpriteKitSimpleGameResources;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA851A7C195A9FDF00B6EAED /* GameOverScene.m in Sources */,
 				EA851A4F195A9AE700B6EAED /* MyScene.m in Sources */,
 				EA851A4C195A9AE700B6EAED /* ViewController.m in Sources */,
 				EA851A46195A9AE700B6EAED /* AppDelegate.m in Sources */,
