@@ -18,6 +18,7 @@ static const uint32_t monsterCategory        =  0x1 << 1;
 @property (nonatomic) NSTimeInterval lastSpawnTimeInterval;
 @property (nonatomic) NSTimeInterval lastUpdateTimeInterval;
 @property (nonatomic) int monstersDestroyed;
+@property (nonatomic) int projectileCount;
 @end
 
 static inline CGPoint rwAdd(CGPoint a, CGPoint b) {
@@ -124,11 +125,16 @@ static inline CGPoint rwNormalize(CGPoint a) {
     self.lastSpawnTimeInterval += timeSinceLast;
     if (self.lastSpawnTimeInterval > 1) {
         self.lastSpawnTimeInterval = 0;
+        self.projectileCount--;
         [self addMonster];
     }
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    if(self.projectileCount > 5){
+        
+    } else {
+    self.projectileCount++;
     
     [self runAction:[SKAction playSoundFileNamed:@"pew-pew-lei.caf" waitForCompletion:NO]];
     
@@ -171,7 +177,7 @@ static inline CGPoint rwNormalize(CGPoint a) {
     SKAction * actionMove = [SKAction moveTo:realDest duration:realMoveDuration];
     SKAction * actionMoveDone = [SKAction removeFromParent];
     [projectile runAction:[SKAction sequence:@[actionMove, actionMoveDone]]];
-    
+    }
 }
 
 - (void)projectile:(SKSpriteNode *)projectile didCollideWithMonster:(SKSpriteNode *)monster {
